@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM317LZ-AP
+D Positive 100mA 40V Linear Regulator, Variable Output 1.2 to 37V, TO-92
+K Voltage Regulator 100mA Positive
+F http://www.st.com/web/en/resource/technical/document/datasheet/CD00000469.pdf
+$ENDCMP
+#
+$CMP MCP1702-5002E
+D 250 mA LDO current regulator, 5V output
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22008E.pdf
+$ENDCMP
+#
+#End Doc Library
