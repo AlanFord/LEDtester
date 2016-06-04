@@ -169,7 +169,7 @@ flash_109: flash
 ## ATtiny1634 values
 LFUSE = 0x62
 HFUSE = 0xdf
-EFUSE = 0xff
+EFUSE = 0x1f
 
 ## Generic 
 FUSE_STRING = -U lfuse:w:$(LFUSE):m -U hfuse:w:$(HFUSE):m -U efuse:w:$(EFUSE):m 

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name led-tester)(type KiCad)(uri "$(KIPRJMOD)/led-tester.pretty")(options "")(descr ""))
+)

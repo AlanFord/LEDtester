@@ -11,4 +11,9 @@ D 250 mA LDO current regulator, 5V output
 F http://ww1.microchip.com/downloads/en/DeviceDoc/22008E.pdf
 $ENDCMP
 #
+$CMP SWITCH_SPDT
+D Switch single pole double throw (SPDT)
+K Switch
+$ENDCMP
+#
 #End Doc Library

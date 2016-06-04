@@ -100,8 +100,12 @@ void initializeADC() {
      * ADC wants to run between 50 kHz and 200 kHz
      * At 1MHz a prescaler of 8 gives us 125 kHz, but should be changed
      * if the clock frequency changes!
+     *
+     * Note that these values are EXTREMELY processor specific, and specific
+     * to the ATtiny1634.  Update required for an alternate mcu.
      */
-    ADMUX |= (1 << REFS0);                  /* reference voltage on AVCC */
+    ADMUX  &= ~(1 << REFS0);                  /* reference voltage on AVCC */
+    ADMUX  &= ~(1 << REFS1);                  /* reference voltage on AVCC */
     ADCSRA |= (1 << ADPS2);                   /* ADC clock prescaler /16 */
     ADCSRA |= (1 << ADEN);                                 /* enable ADC */
 }
@@ -138,7 +142,6 @@ void getSamples() {
     adcConversion = BOARD_VOLTAGE / (float) INPUT_ADC_MAXIMUM * ledCurrentSenseInput;
     // Voltage drop of current sense resistor
     ledMilliamps = (uint8_t)(adcConversion / LED_CURRENT_SENSE_RESISTOR * 1000 + ROUND_UP);
-    
     
     ///////////////////////////////////////////////////////////
     ledVoltageInput = readADC(LED_HALF_VOLTAGE) * 2;

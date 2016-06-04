@@ -1,5 +1,6 @@
 # ignore support files for this project
 support_files/
+atmel docs and code/
 
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 

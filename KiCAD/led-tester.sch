@@ -156,18 +156,6 @@ F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/schott
 	0    1    1    0   
 $EndComp
 $Comp
-L SPST SW1
-U 1 1 56EF171B
-P 6450 5100
-F 0 "SW1" H 6450 5200 50  0000 C CNN
-F 1 "SPDT" H 6450 5000 50  0000 C CNN
-F 2 "" H 6450 5100 50  0001 C CNN
-F 3 "https://www.e-switch.com/system/asset/product_line/data_sheet/119/EG.pdf" H 6450 5100 50  0001 C CNN
-F 4 "EG1218" H 6450 5100 60  0001 C CNN "Note"
-	1    6450 5100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Battery BT1
 U 1 1 56EF1763
 P 6450 6000
@@ -332,7 +320,8 @@ P 1600 5200
 F 0 "R1" H 1600 5100 50  0000 C CNN
 F 1 "10k" H 1600 5200 50  0000 C CNN
 F 2 "" H 1600 5200 50  0001 C CNN
-F 3 "" H 1600 5200 50  0000 C CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 1600 5200 50  0001 C CNN
+F 4 "3386F-1-103TLF" H 1600 5200 60  0001 C CNN "Note"
 	1    1600 5200
 	1    0    0    -1  
 $EndComp
@@ -472,9 +461,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 2400 1800 2500
 Wire Wire Line
-	6450 4350 6450 4600
-Wire Wire Line
-	6450 5600 6450 5850
+	6450 4350 6450 4700
 Wire Wire Line
 	6450 6150 9650 6150
 Wire Wire Line
@@ -506,9 +493,6 @@ Wire Wire Line
 	9000 5950 9000 6150
 Connection ~ 9000 6150
 Connection ~ 9000 4400
-Wire Wire Line
-	6000 5750 6450 5750
-Connection ~ 6450 5750
 Wire Wire Line
 	7650 6250 7650 6150
 Connection ~ 7650 6150
@@ -748,4 +732,25 @@ a14
 NoConn ~ 4750 2350
 NoConn ~ 4750 3050
 NoConn ~ 12350 5850
+$Comp
+L SWITCH_SPDT SW1
+U 1 1 574DC0BE
+P 6450 5100
+F 0 "SW1" H 6450 5350 60  0000 C CNN
+F 1 "SWITCH_SPDT" H 6490 4850 59  0000 C CNN
+F 2 "" H 6450 5100 60  0000 C CNN
+F 3 "https://www.e-switch.com/system/asset/product_line/data_sheet/119/EG.pdf" H 6450 5100 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 6450 5100 60  0001 C CNN "Supplier"
+F 5 "EG-1218" H 6450 5100 60  0001 C CNN "Part No."
+	1    6450 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 5850 6450 5500
+Wire Wire Line
+	6000 5750 6450 5750
+Connection ~ 6450 5750
+Wire Wire Line
+	6450 4700 6350 4700
+NoConn ~ 6550 4700
 $EndSCHEMATC
