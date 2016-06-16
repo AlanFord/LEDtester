@@ -1,0 +1,17 @@
+(module LED-LargePads (layer F.Cu) (tedit 5762E25B)
+  (descr "LED Large pads - Lead pitch 100mil (2.54mm)")
+  (tags "LED led large pads 100mil 2.54mm")
+  (fp_text reference REF** (at 0 -3.429) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "LED Pads" (at 0.127 10.414) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 2 thru_hole rect (at 1.27 0 180) (size 12.7 10.16) (drill 0.8 (offset -5.207 -3.81)) (layers *.Cu *.Mask F.SilkS))
+  (pad 1 thru_hole rect (at -1.27 0 180) (size 12.7 10.16) (drill 0.8 (offset 5.207 -3.81)) (layers *.Cu *.Mask F.SilkS))
+  (model LEDs.3dshapes/LED-10MM.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

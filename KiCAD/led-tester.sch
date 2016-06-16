@@ -156,17 +156,6 @@ F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/schott
 	0    1    1    0   
 $EndComp
 $Comp
-L Battery BT1
-U 1 1 56EF1763
-P 6450 6000
-F 0 "BT1" H 6550 6050 50  0000 L CNN
-F 1 "9V" H 6550 5950 50  0000 L CNN
-F 2 "" V 6450 6040 50  0001 C CNN
-F 3 "" V 6450 6040 50  0000 C CNN
-	1    6450 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
 L POT-RESCUE-led-tester R5
 U 1 1 56EF17E4
 P 8050 4400
@@ -237,7 +226,7 @@ U 1 1 56F174C4
 P 8350 5050
 F 0 "Z1" H 8350 4900 60  0000 C CNN
 F 1 "testPad" H 8350 5050 60  0000 C CNN
-F 2 "" H 8350 5050 60  0001 C CNN
+F 2 "led-tester:LED-LargePads" H 8350 5050 60  0001 C CNN
 F 3 "" H 8350 5050 60  0000 C CNN
 	1    8350 5050
 	1    0    0    -1  
@@ -463,7 +452,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 4350 6450 4700
 Wire Wire Line
-	6450 6150 9650 6150
+	6300 6150 9650 6150
 Wire Wire Line
 	6800 4350 6800 6150
 Connection ~ 6800 6150
@@ -746,11 +735,24 @@ F 5 "EG-1218" H 6450 5100 60  0001 C CNN "Part No."
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6450 5850 6450 5500
+	6450 5500 6450 6050
 Wire Wire Line
 	6000 5750 6450 5750
 Connection ~ 6450 5750
 Wire Wire Line
 	6450 4700 6350 4700
 NoConn ~ 6550 4700
+$Comp
+L CONN_01X02 P4
+U 1 1 575C303D
+P 6100 6100
+F 0 "P4" H 6100 6250 50  0000 C CNN
+F 1 "CONN_01X02" V 6200 6100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6100 6100 50  0000 C CNN
+F 3 "" H 6100 6100 50  0000 C CNN
+	1    6100 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6050 6300 6050
 $EndSCHEMATC
