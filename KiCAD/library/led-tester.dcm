@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM317LZ-AP
+D Positive 100mA 40V Linear Regulator, Variable Output 1.2 to 37V, TO-92
+K Voltage Regulator 100mA Positive
+F http://www.st.com/web/en/resource/technical/document/datasheet/CD00000469.pdf
+$ENDCMP
+#
+$CMP LM317L_SO-8
+D 350mA Linear LDO Regulator, Fixed Output 3.3V, SO-8
+K Linear LDO Regulator 350mA 3.3V
+F http://datasheets.maximintegrated.com/en/ds/MAX1658-MAX1659.pdf
+$ENDCMP
+#
+$CMP MAX1659ESA
+D 350mA Linear LDO Regulator, Fixed Output 5V, SO-8
+K Linear LDO Regulator 350mA 5V
+F http://datasheets.maximintegrated.com/en/ds/MAX1658-MAX1659.pdf
+$ENDCMP
+#
+$CMP MCP1702-5002E
+D 250 mA LDO current regulator, 5V output
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22008E.pdf
+$ENDCMP
+#
+$CMP SWITCH_SPDT
+D Switch single pole double throw (SPDT)
+K Switch
+$ENDCMP
+#
+#End Doc Library
