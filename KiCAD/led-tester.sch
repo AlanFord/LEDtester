@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:led-tester-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:myLib
+LIBS:led-tester
 LIBS:led-tester-cache
 EELAYER 25 0
 EELAYER END
@@ -50,8 +49,8 @@ L MCP1702-5002E U1
 U 1 1 56EEB18A
 P 1250 2400
 F 0 "U1" H 1250 1900 60  0000 C CNN
-F 1 "MCP1702-5002E" H 1250 2400 60  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 1250 2400 60  0001 C CNN
+F 1 "MCP1702T-5002E" H 1250 2400 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 1250 2400 60  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22008E.pdf" H 1250 2400 60  0001 C CNN
 	1    1250 2400
 	1    0    0    -1  
@@ -117,7 +116,7 @@ U 1 1 56EF161D
 P 6800 4200
 F 0 "C3" H 6825 4300 50  0000 L CNN
 F 1 "0.1uF" H 6825 4100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6838 4050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6838 4050 50  0001 C CNN
 F 3 "" H 6800 4200 50  0000 C CNN
 	1    6800 4200
 	1    0    0    -1  
@@ -128,7 +127,7 @@ U 1 1 56EF1659
 P 9350 5800
 F 0 "C4" H 9375 5900 50  0000 L CNN
 F 1 "0.1uF" H 9375 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9388 5650 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9388 5650 50  0001 C CNN
 F 3 "" H 9350 5800 50  0000 C CNN
 	1    9350 5800
 	1    0    0    -1  
@@ -139,7 +138,7 @@ U 1 1 56EF1699
 P 9650 5800
 F 0 "C5" H 9675 5900 50  0000 L CNN
 F 1 "0.1uF" H 9675 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9688 5650 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9688 5650 50  0001 C CNN
 F 3 "" H 9650 5800 50  0000 C CNN
 	1    9650 5800
 	1    0    0    -1  
@@ -156,12 +155,12 @@ F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/schott
 	0    1    1    0   
 $EndComp
 $Comp
-L POT-RESCUE-led-tester R5
+L POT-led-tester R5
 U 1 1 56EF17E4
 P 8050 4400
 F 0 "R5" H 8050 4300 50  0000 C CNN
 F 1 "500R" H 8050 4400 50  0000 C CNN
-F 2 "" H 8050 4400 50  0001 C CNN
+F 2 "led-tester:bourns_3386_potentiometer" H 8050 4400 50  0001 C CNN
 F 3 "http://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 8050 4400 50  0001 C CNN
 F 4 "3386F-1-501TLF" H 8050 4400 60  0001 C CNN "Note"
 	1    8050 4400
@@ -205,17 +204,6 @@ F 3 "" H 7650 6250 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 NoConn ~ 7800 4400
-$Comp
-L LM317LZ-AP U2
-U 1 1 56EF1342
-P 7900 3500
-F 0 "U2" H 7700 3700 50  0000 C CNN
-F 1 "LM317LZ-AP" H 7900 3700 50  0000 L CNN
-F 2 "" H 7900 3600 50  0001 C CIN
-F 3 "http://www2.st.com/content/ccc/resource/technical/document/datasheet/ee/4d/b2/bd/25/fe/44/2c/CD00000469.pdf/files/CD00000469.pdf/jcr:content/translations/en.CD00000469.pdf" H 7900 3500 50  0001 C CNN
-	1    7900 3500
-	1    0    0    1   
-$EndComp
 Text GLabel 6450 3550 1    60   Input ~ 0
 +9V
 Text GLabel 1800 3250 3    60   Input ~ 0
@@ -236,12 +224,12 @@ LEDhigh
 Text GLabel 3850 900  0    60   Input ~ 0
 LEDlow
 $Comp
-L POT-RESCUE-led-tester R3
+L POT-led-tester R3
 U 1 1 571EA49D
 P 6300 2750
 F 0 "R3" H 6300 2650 50  0000 C CNN
 F 1 "10k" H 6300 2750 50  0000 C CNN
-F 2 "" H 6300 2750 50  0001 C CNN
+F 2 "led-tester:bourns_3386_potentiometer" H 6300 2750 50  0001 C CNN
 F 3 "http://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 6300 2750 50  0001 C CNN
 F 4 "3386F-1-103TLF" H 6300 2750 60  0001 C CNN "Note"
 	1    6300 2750
@@ -303,14 +291,14 @@ F 3 "" H 850 5700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT-RESCUE-led-tester R1
+L POT-led-tester R1
 U 1 1 5724D921
 P 1600 5200
 F 0 "R1" H 1600 5100 50  0000 C CNN
 F 1 "10k" H 1600 5200 50  0000 C CNN
-F 2 "" H 1600 5200 50  0001 C CNN
-F 3 "http://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 1600 5200 50  0001 C CNN
-F 4 "3386F-1-103TLF" H 1600 5200 60  0001 C CNN "Note"
+F 2 "led-tester:Panasonic_pot" H 1600 5200 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/EVM-3Y_S_R_Rev2010.pdf" H 1600 5200 50  0001 C CNN
+F 4 "EVM-3YSX50B14" H 1600 5200 60  0001 C CNN "Note"
 	1    1600 5200
 	1    0    0    -1  
 $EndComp
@@ -326,25 +314,14 @@ F 3 "" H 7050 2500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X06 P2
-U 1 1 5727554D
-P 4100 5650
-F 0 "P2" H 4100 6000 50  0000 C CNN
-F 1 "CONN_01X06" V 4200 5650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 4100 5650 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_CABLES.pdf" H 4100 5650 50  0001 C CNN
-	1    4100 5650
-	0    1    1    0   
-$EndComp
-$Comp
 L GND #PWR08
 U 1 1 57277AB0
-P 4800 5450
-F 0 "#PWR08" H 4800 5200 50  0001 C CNN
-F 1 "GND" H 4800 5300 50  0000 C CNN
-F 2 "" H 4800 5450 50  0000 C CNN
-F 3 "" H 4800 5450 50  0000 C CNN
-	1    4800 5450
+P 4800 5000
+F 0 "#PWR08" H 4800 4750 50  0001 C CNN
+F 1 "GND" H 4800 4850 50  0000 C CNN
+F 2 "" H 4800 5000 50  0000 C CNN
+F 3 "" H 4800 5000 50  0000 C CNN
+	1    4800 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -387,9 +364,6 @@ NoConn ~ 2200 6100
 NoConn ~ 2200 6200
 NoConn ~ 1700 6200
 NoConn ~ 1700 6100
-NoConn ~ 3850 5450
-NoConn ~ 4150 5450
-NoConn ~ 4250 5450
 $Comp
 L CP1_Small C2
 U 1 1 57292698
@@ -418,7 +392,7 @@ U 1 1 57292D31
 P 2100 1300
 F 0 "C1" H 2110 1370 50  0000 L CNN
 F 1 "0.1 uF" H 2110 1220 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2100 1300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2100 1300 50  0001 C CNN
 F 3 "" H 2100 1300 50  0000 C CNN
 	1    2100 1300
 	1    0    0    -1  
@@ -486,7 +460,7 @@ Wire Wire Line
 	7650 6250 7650 6150
 Connection ~ 7650 6150
 Wire Wire Line
-	7500 4000 8050 4000
+	7400 4000 8050 4000
 Wire Wire Line
 	8050 4000 8050 4250
 Wire Wire Line
@@ -497,18 +471,12 @@ Wire Wire Line
 Wire Wire Line
 	9000 3550 9000 4400
 Wire Wire Line
-	9000 3550 8300 3550
-Wire Wire Line
 	6450 3750 7200 3750
 Wire Wire Line
-	7200 3750 7200 3250
+	7200 3750 7200 3150
 Wire Wire Line
-	7200 3250 7900 3250
-Wire Wire Line
-	6800 4050 6800 3750
+	6800 3500 6800 4050
 Connection ~ 6800 3750
-Wire Wire Line
-	7500 4000 7500 3550
 Wire Wire Line
 	8900 4400 8900 4800
 Wire Wire Line
@@ -558,14 +526,6 @@ Wire Wire Line
 	1250 5800 1700 5800
 Wire Wire Line
 	2700 5800 2200 5800
-Wire Wire Line
-	3950 5150 3950 5450
-Wire Wire Line
-	4050 4800 4050 5450
-Wire Wire Line
-	4350 5450 4800 5450
-Wire Wire Line
-	5800 5150 3950 5150
 Wire Wire Line
 	4450 4050 4450 3800
 Connection ~ 4450 3800
@@ -635,7 +595,7 @@ U 1 1 5737B23E
 P 3800 2200
 F 0 "IC1" H 3050 3400 50  0000 C CNN
 F 1 "ATTINY1634R-SU" H 4350 1200 50  0000 C CNN
-F 2 "SO20" H 3800 2450 50  0000 C CIN
+F 2 "led-tester:SOIC-20_7.5x12.8mm_Pitch1.27mm" H 3800 2650 50  0001 C CNN
 F 3 "http://www.atmel.com/images/atmel-8303-8-bit-avr-microcontroller-tinyavr-attiny1634_datasheet.pdf" H 3800 2650 50  0001 C CNN
 	1    3800 2200
 	1    0    0    -1  
@@ -684,10 +644,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 1850 4750 1850
 Wire Wire Line
-	5800 5150 5800 2050
-Wire Wire Line
-	5800 2050 4750 2050
-Wire Wire Line
 	3850 700  4900 700 
 Wire Wire Line
 	4900 700  4900 1250
@@ -727,7 +683,7 @@ U 1 1 574DC0BE
 P 6450 5100
 F 0 "SW1" H 6450 5350 60  0000 C CNN
 F 1 "SWITCH_SPDT" H 6490 4850 59  0000 C CNN
-F 2 "" H 6450 5100 60  0000 C CNN
+F 2 "led-tester:SPDT-switch" H 6450 5100 60  0001 C CNN
 F 3 "https://www.e-switch.com/system/asset/product_line/data_sheet/119/EG.pdf" H 6450 5100 60  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 6450 5100 60  0001 C CNN "Supplier"
 F 5 "EG-1218" H 6450 5100 60  0001 C CNN "Part No."
@@ -755,4 +711,61 @@ F 3 "" H 6100 6100 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6450 6050 6300 6050
+$Comp
+L LM317L_SO-8 U2
+U 1 1 5765C201
+P 8600 2600
+F 0 "U2" H 8300 2850 50  0000 C CNN
+F 1 "LM317LD13TR" H 8750 2850 50  0000 C CNN
+F 2 "Power_Integrations:SO-8" H 8600 2600 50  0001 C CIN
+F 3 "http://www2.st.com/content/ccc/resource/technical/document/datasheet/ee/4d/b2/bd/25/fe/44/2c/CD00000469.pdf/files/CD00000469.pdf/jcr:content/translations/en.CD00000469.pdf" H 8600 2550 50  0001 C CNN
+	1    8600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3550 9400 3550
+Wire Wire Line
+	9400 3550 9400 2450
+Wire Wire Line
+	9400 2450 9100 2450
+Wire Wire Line
+	7200 3150 9100 3150
+Wire Wire Line
+	9100 3150 9100 2800
+Wire Wire Line
+	7400 4000 7400 2800
+Wire Wire Line
+	7400 2800 8100 2800
+NoConn ~ 8100 2450
+NoConn ~ 8100 2550
+NoConn ~ 8100 2650
+NoConn ~ 8600 2950
+NoConn ~ 9100 2550
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 5765D019
+P 6800 3500
+F 0 "#FLG016" H 6800 3595 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 3680 50  0000 C CNN
+F 2 "" H 6800 3500 50  0000 C CNN
+F 3 "" H 6800 3500 50  0000 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5768201C
+P 4100 5200
+F 0 "P2" H 4100 5350 50  0000 C CNN
+F 1 "CONN_01X02" V 4200 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4100 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0000 C CNN
+	1    4100 5200
+	0    1    1    0   
+$EndComp
+NoConn ~ 4750 2050
+Wire Wire Line
+	4050 4800 4050 5000
+Wire Wire Line
+	4150 5000 4800 5000
 $EndSCHEMATC
