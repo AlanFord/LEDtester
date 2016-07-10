@@ -1,0 +1,26 @@
+Reference, Value, Footprint, Datasheet, MPN, MPN
+U1,MCP1702,TO_SOT_Packages_SMD:SOT-23_Handsoldering,http://ww1.microchip.com/downloads/en/DeviceDoc/22008E.pdf,MCP1702T-5002E
+R8,10K,Resistors_SMD:R_0805,
+R6,47R,Resistors_SMD:R_0805,
+R7,47R,Resistors_SMD:R_0805,
+R9,10K,Resistors_SMD:R_0805,
+C3,0.1uF,Capacitors_SMD:C_0805,
+C4,0.1uF,Capacitors_SMD:C_0805,
+C5,0.1uF,Capacitors_SMD:C_0805,
+D2,Schottky,Diodes_SMD:SOD-123,http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/schottky_barrier/rb161m-20.pdf,RB161M-20TR
+R5,500R,led-tester:bourns_3386_potentiometer,http://www.bourns.com/docs/Product-Datasheets/3386.pdf,3386F-1-501TLF
+Z1,testPad,led-tester:LED-LargePads,
+R3,10k,led-tester:bourns_3386_potentiometer,http://www.bourns.com/docs/Product-Datasheets/3386.pdf,3386F-1-103TLF
+P3,CONN_02X03,Pin_Headers:Pin_Header_Straight_2x03,http://www.atmel.com/Images/Atmel-42093-AVR-ISP-mkII_UserGuide.pdf
+P1,CONN_02X07,Pin_Headers:Pin_Header_Straight_2x07,https://www.pololu.com/product/356
+R1,10k,led-tester:Panasonic_pot,http://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/EVM-3Y_S_R_Rev2010.pdf,EVM-3YSX50B14
+R4,10K,Resistors_SMD:R_0805,
+D1,Schottky,Diodes_SMD:SOD-123,http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/schottky_barrier/rb161m-20.pdf,RB161M-20TR
+R2,10K,Resistors_SMD:R_0805,
+C2,2.2 uF,Capacitors_SMD:C_1206,
+C1,0.1 uF,Capacitors_SMD:C_0805,
+IC1,ATTINY1634,led-tester:SOIC-20_7.5x12.8mm_Pitch1.27mm,http://www.atmel.com/images/atmel-8303-8-bit-avr-microcontroller-tinyavr-attiny1634_datasheet.pdf,ATTINY1634R-SU
+SW1,SWITCH_SPDT,led-tester:SPDT-switch,https://www.e-switch.com/system/asset/product_line/data_sheet/119/EG.pdf,EG-1218
+P4,CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+U2,LM317L,Power_Integrations:SO-8,http://www2.st.com/content/ccc/resource/technical/document/datasheet/ee/4d/b2/bd/25/fe/44/2c/CD00000469.pdf/files/CD00000469.pdf/jcr:content/translations/en.CD00000469.pdf,LM317LD13TR
+P2,CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
