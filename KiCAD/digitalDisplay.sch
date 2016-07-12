@@ -205,25 +205,13 @@ a5
 Text Label 5750 3350 0    60   ~ 0
 a6
 Text Label 5750 1850 0    60   ~ 0
-a11
-Text Label 5750 1950 0    60   ~ 0
-a12
-Text Label 5750 2050 0    60   ~ 0
-a13
-Text Label 5750 2150 0    60   ~ 0
 a14
 NoConn ~ 5750 2750
 NoConn ~ 5750 3450
 Wire Wire Line
-	5750 1300 5750 1550
+	1700 1300 6300 1300
 Wire Wire Line
-	1700 1300 5750 1300
-Wire Wire Line
-	5900 1650 5750 1650
-Wire Wire Line
-	5900 1100 5900 1650
-Wire Wire Line
-	1700 1100 5900 1100
+	1700 1100 6400 1100
 Wire Wire Line
 	5750 3250 10050 3250
 Wire Wire Line
@@ -319,8 +307,6 @@ F 3 "" H 7100 1500 50  0000 C CNN
 	1    7100 1500
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 1750 6950 1750
 $Comp
 L +5V #PWR021
 U 1 1 5784597D
@@ -360,4 +346,22 @@ F 3 "" H 3950 4650 50  0000 C CNN
 	1    3950 4650
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	5750 2150 6950 2150
+Wire Wire Line
+	6950 2150 6950 1750
+Wire Wire Line
+	6400 1100 6400 2050
+Wire Wire Line
+	6400 2050 5750 2050
+Wire Wire Line
+	6300 1300 6300 1950
+Wire Wire Line
+	6300 1950 5750 1950
+Text Label 5750 1750 0    60   ~ 0
+a13
+Text Label 5750 1650 0    60   ~ 0
+a12
+Text Label 5750 1550 0    60   ~ 0
+a11
 $EndSCHEMATC
