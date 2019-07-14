@@ -4,7 +4,8 @@
 ##########    Check these every time you start a new project    ##########
 ##########------------------------------------------------------##########
 
-MCU   = attiny1634
+#MCU   = attiny1634
+MCU   = attiny84
 F_CPU = 1000000UL
 BAUD  = 9600UL
 #F_CPU = 8000000UL

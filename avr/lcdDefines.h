@@ -22,9 +22,9 @@
 #endif
 
 /* HD44780 LCD port connections */
-#define HD44780_RS C, 0
-#define HD44780_RW C, 2
-#define HD44780_E  C, 4
+#define HD44780_RS B, 0
+#define HD44780_RW B, 1
+#define HD44780_E  A, 4
 /* The data bits have to be not only in ascending order but also consecutive. */
 #define HD44780_D4 A, 0
 

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name led-tester-rescue)(type Legacy)(uri ${KIPRJMOD}/led-tester-rescue.lib)(options "")(descr ""))
+  (lib (name led-tester)(type Legacy)(uri ${KIPRJMOD}/library/led-tester.lib)(options "")(descr ""))
+)

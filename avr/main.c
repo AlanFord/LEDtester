@@ -104,6 +104,7 @@ void initializeADC() {
      * Note that these values are EXTREMELY processor specific, and specific
      * to the ATtiny1634.  Update required for an alternate mcu.
      */
+
     ADMUX  &= ~(1 << REFS0);                  /* reference voltage on AVCC */
     ADMUX  &= ~(1 << REFS1);                  /* reference voltage on AVCC */
     ADCSRA |= (1 << ADPS2);                   /* ADC clock prescaler /16 */

@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:led-tester
+EESchema Schematic File Version 4
 LIBS:led-tester-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -63,18 +33,6 @@ F1 "power.sch" 60
 F2 "Battery+" I L 4150 1950 60 
 F3 "Battery-" I L 4150 2300 60 
 $EndSheet
-$Comp
-L CONN_01X02 P102
-U 1 1 5782D997
-P 3750 2100
-F 0 "P102" H 3750 2250 50  0000 C CNN
-F 1 "CONN_01X02" V 3850 2100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3750 2100 50  0001 C CNN
-F 3 "" H 3750 2100 50  0000 C CNN
-F 4 "Value" H 3750 2100 60  0001 C CNN "Fieldname"
-	1    3750 2100
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3950 2050 3950 1950
 Wire Wire Line
@@ -90,44 +48,32 @@ F0 "Digital Display" 60
 F1 "digitalDisplay.sch" 60
 F2 "LEDhigh" I L 4700 3700 60 
 F3 "LEDlow" I L 4700 3950 60 
-F4 "RX" I R 6000 4200 60 
-F5 "TX" I R 6000 4300 60 
-F6 "RESET" I R 6000 3900 60 
-F7 "SCK" I R 6000 3800 60 
-F8 "MISO" I R 6000 3700 60 
-F9 "MOSI" I R 6000 4000 60 
+F4 "TX" I R 6000 4300 60 
+F5 "RESET" I R 6000 3700 60 
+F6 "SCK" I R 6000 3800 60 
+F7 "MISO" I R 6000 3900 60 
+F8 "MOSI" I R 6000 4000 60 
 $EndSheet
 Wire Wire Line
 	4350 3700 4700 3700
 Wire Wire Line
 	4350 3950 4700 3950
 $Comp
-L CONN_02X03 P104
-U 1 1 5783F4C8
-P 7850 3400
-F 0 "P104" H 7850 3600 50  0000 C CNN
-F 1 "CONN_02X03" H 7850 3200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7850 2200 50  0001 C CNN
-F 3 "http://www.atmel.com/Images/Atmel-42093-AVR-ISP-mkII_UserGuide.pdf" H 7850 2200 50  0001 C CNN
-	1    7850 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR01
+L power:GND #PWR0102
 U 1 1 5783F4CF
-P 8250 3500
-F 0 "#PWR01" H 8250 3250 50  0001 C CNN
-F 1 "GND" H 8250 3350 50  0000 C CNN
-F 2 "" H 8250 3500 50  0000 C CNN
-F 3 "" H 8250 3500 50  0000 C CNN
-	1    8250 3500
+P 8250 3600
+F 0 "#PWR0102" H 8250 3350 50  0001 C CNN
+F 1 "GND" H 8250 3450 50  0000 C CNN
+F 2 "" H 8250 3600 50  0000 C CNN
+F 3 "" H 8250 3600 50  0000 C CNN
+	1    8250 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR02
+L power:+5V #PWR0103
 U 1 1 5783F4D5
 P 8400 3300
-F 0 "#PWR02" H 8400 3150 50  0001 C CNN
+F 0 "#PWR0103" H 8400 3150 50  0001 C CNN
 F 1 "+5V" H 8400 3440 50  0000 C CNN
 F 2 "" H 8400 3300 50  0000 C CNN
 F 3 "" H 8400 3300 50  0000 C CNN
@@ -137,7 +83,7 @@ $EndComp
 Wire Wire Line
 	8100 3300 8400 3300
 Wire Wire Line
-	8100 3500 8250 3500
+	8100 3600 8250 3600
 Wire Wire Line
 	6000 3700 7000 3700
 Wire Wire Line
@@ -153,64 +99,69 @@ Wire Wire Line
 Wire Wire Line
 	6000 3900 7250 3900
 Wire Wire Line
-	7250 3900 7250 3500
-Wire Wire Line
-	7250 3500 7600 3500
-Wire Wire Line
-	6000 4000 8400 4000
-Wire Wire Line
-	8400 4000 8400 3400
-Wire Wire Line
-	8400 3400 8100 3400
-$Comp
-L GND #PWR03
-U 1 1 5784561C
-P 6900 4900
-F 0 "#PWR03" H 6900 4650 50  0001 C CNN
-F 1 "GND" H 6900 4750 50  0000 C CNN
-F 2 "" H 6900 4900 50  0000 C CNN
-F 3 "" H 6900 4900 50  0000 C CNN
-	1    6900 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X03 P103
-U 1 1 57846871
-P 7800 4800
-F 0 "P103" H 7800 5000 50  0000 C CNN
-F 1 "CONN_01X03" V 7900 4800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7800 4800 50  0001 C CNN
-F 3 "" H 7800 4800 50  0000 C CNN
-	1    7800 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 4200 6300 4200
-Wire Wire Line
-	6300 4200 6300 4700
-Wire Wire Line
-	6300 4700 7600 4700
-Wire Wire Line
 	6000 4300 6200 4300
 Wire Wire Line
 	6200 4300 6200 4800
 Wire Wire Line
-	6200 4800 7600 4800
-$Comp
-L CONN_01X02 P101
-U 1 1 578471FF
-P 2400 3950
-F 0 "P101" H 2400 4100 50  0000 C CNN
-F 1 "CONN_01X02" V 2500 3950 50  0000 C CNN
-F 2 "led-tester:LED_touch_pads" H 2400 3950 50  0001 C CNN
-F 3 "" H 2400 3950 50  0000 C CNN
-	1    2400 3950
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
 	2600 3900 2900 3900
 Wire Wire Line
 	2600 4000 2900 4000
+$Comp
+L Connector_Generic:Conn_01x02 J102
+U 1 1 5D01CEF1
+P 3750 2050
+F 0 "J102" H 3668 2267 50  0000 C CNN
+F 1 "NOPOP" H 3668 2176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3750 2050 50  0001 C CNN
+F 3 "~" H 3750 2050 50  0001 C CNN
+	1    3750 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J101
+U 1 1 5D01EACB
+P 2400 3900
+F 0 "J101" H 2318 4117 50  0000 C CNN
+F 1 "NOPOP" H 2318 4026 50  0000 C CNN
+F 2 "led-tester:LED-LargePads" H 2400 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	-1   0    0    -1  
+$EndComp
+Text Notes 2000 3600 0    60   ~ 0
+LED Touch Pads
+Text Notes 3100 1750 0    60   ~ 0
+9V Battery Terminal
+Text Notes 7200 3100 0    60   ~ 0
+ISP Programming Header
+Text Notes 6550 4750 0    60   ~ 0
+Serial/Debug
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J103
+U 1 1 5D0462A3
+P 7900 3400
+F 0 "J103" H 7950 3625 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 7950 3626 50  0001 C CNN
+F 2 "led-tester:SOIC_clipProgSmall" H 7900 3400 50  0001 C CNN
+F 3 "~" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 8100 3400
 Wire Wire Line
-	7600 4900 6900 4900
+	6000 4000 7450 4000
+Wire Wire Line
+	7450 4000 7450 3600
+Wire Wire Line
+	7450 3600 7600 3600
+Wire Wire Line
+	7250 3900 7250 3500
+Wire Wire Line
+	7250 3500 7600 3500
+Wire Wire Line
+	8550 4800 8550 3500
+Wire Wire Line
+	8550 3500 8100 3500
+Wire Wire Line
+	6200 4800 8550 4800
 $EndSCHEMATC
