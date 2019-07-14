@@ -17,24 +17,24 @@ $EndDescr
 $Comp
 L led-tester:POT-led-tester R406
 U 1 1 5782F218
-P 8300 2700
-F 0 "R406" H 8300 2600 50  0000 C CNN
-F 1 "10k" H 8300 2700 50  0000 C CNN
-F 2 "led-tester:bourns_3386_potentiometer" H 8300 2700 50  0001 C CNN
-F 3 "http://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 8300 2700 50  0001 C CNN
-F 4 "3386F-1-103TLF" H 8300 2700 60  0001 C CNN "MPN"
-	1    8300 2700
+P 8050 1950
+F 0 "R406" H 8050 1850 50  0000 C CNN
+F 1 "10k" H 8050 1950 50  0000 C CNN
+F 2 "led-tester:bourns_3386_potentiometer" H 8050 1950 50  0001 C CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 8050 1950 50  0001 C CNN
+F 4 "3386F-1-103TLF" H 8050 1950 60  0001 C CNN "MPN"
+	1    8050 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0410
 U 1 1 5782F21F
-P 8500 2950
-F 0 "#PWR0410" H 8500 2700 50  0001 C CNN
-F 1 "GND" H 8500 2800 50  0000 C CNN
-F 2 "" H 8500 2950 50  0000 C CNN
-F 3 "" H 8500 2950 50  0000 C CNN
-	1    8500 2950
+P 8250 2200
+F 0 "#PWR0410" H 8250 1950 50  0001 C CNN
+F 1 "GND" H 8250 2050 50  0000 C CNN
+F 2 "" H 8250 2200 50  0000 C CNN
+F 3 "" H 8250 2200 50  0000 C CNN
+	1    8250 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -72,11 +72,11 @@ F 3 "" H 6050 3800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 4650 6000 0    60   ~ 0
-a4
+RS
 Text Label 4150 6100 2    60   ~ 0
-a5
+RW
 Text Label 4650 6100 0    60   ~ 0
-a6
+CE
 Text Label 4150 6400 2    60   ~ 0
 a11
 Text Label 4650 6400 0    60   ~ 0
@@ -122,13 +122,7 @@ F 3 "" H 5150 3950 50  0000 C CNN
 	1    5150 3950
 	1    0    0    -1  
 $EndComp
-Text Label 6850 2950 0    60   ~ 0
-a4
-Text Label 7350 2850 0    60   ~ 0
-a5
-Text Label 7850 2750 0    60   ~ 0
-a6
-Text Label 5750 2650 0    60   ~ 0
+Text Label 5750 3050 0    60   ~ 0
 a14
 Wire Wire Line
 	5750 3550 5900 3550
@@ -136,9 +130,9 @@ Wire Wire Line
 	5150 3850 5150 3950
 Wire Wire Line
 	5150 5900 4650 5900
-Text HLabel 5750 3250 2    60   Input ~ 0
+Text HLabel 5750 2550 2    60   Input ~ 0
 LEDhigh
-Text HLabel 5750 3350 2    60   Input ~ 0
+Text HLabel 5750 2450 2    60   Input ~ 0
 LEDlow
 $Comp
 L power:+5V #PWR0405
@@ -182,12 +176,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0409
 U 1 1 578451EC
-P 8300 2350
-F 0 "#PWR0409" H 8300 2200 50  0001 C CNN
-F 1 "+5V" H 8300 2490 50  0000 C CNN
-F 2 "" H 8300 2350 50  0000 C CNN
-F 3 "" H 8300 2350 50  0000 C CNN
-	1    8300 2350
+P 8050 1600
+F 0 "#PWR0409" H 8050 1450 50  0001 C CNN
+F 1 "+5V" H 8050 1740 50  0000 C CNN
+F 2 "" H 8050 1600 50  0000 C CNN
+F 3 "" H 8050 1600 50  0000 C CNN
+	1    8050 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -224,17 +218,13 @@ F 3 "" H 3500 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 3100 8150 2700
-Text Label 5750 2550 0    60   ~ 0
+	7900 2350 7900 1950
+Text Label 6850 2950 0    60   ~ 0
 a13
-Text Label 5750 2450 0    60   ~ 0
-a12
-Text Label 5750 2350 0    60   ~ 0
-a11
 Wire Wire Line
-	8500 2950 8300 2950
+	8250 2200 8050 2200
 Wire Wire Line
-	8300 2350 8300 2450
+	8050 1600 8050 1700
 Wire Wire Line
 	5900 3550 6150 3550
 $Comp
@@ -313,11 +303,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 2950 6150 2950
 Wire Wire Line
-	6000 3100 6000 3050
-Wire Wire Line
-	6000 3050 5750 3050
-Wire Wire Line
-	6000 3100 8150 3100
+	5750 2350 7900 2350
 Wire Wire Line
 	5150 1850 5150 1950
 Connection ~ 5150 1950
@@ -325,7 +311,7 @@ Wire Wire Line
 	5150 1950 5150 2050
 Wire Wire Line
 	4300 1950 5150 1950
-Text Notes 8550 2750 0    60   ~ 0
+Text Notes 8300 2000 0    60   ~ 0
 Voltage Control
 $Comp
 L MCU_Microchip_ATtiny:ATtiny84A-SSU U?
@@ -338,4 +324,14 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H 5150 2950 50
 	1    5150 2950
 	1    0    0    -1  
 $EndComp
+Text Label 7350 2850 0    60   ~ 0
+a12
+Text Label 7850 2750 0    60   ~ 0
+a11
+Text Label 5750 2650 0    60   ~ 0
+CE
+Text Label 5750 3250 0    60   ~ 0
+RS
+Text Label 5750 3350 0    60   ~ 0
+RW
 $EndSCHEMATC
