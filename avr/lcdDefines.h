@@ -24,9 +24,9 @@
 /* HD44780 LCD port connections */
 #define HD44780_RS B, 0
 #define HD44780_RW B, 1
-#define HD44780_E  A, 4
+#define HD44780_E  A, 3
 /* The data bits have to be not only in ascending order but also consecutive. */
-#define HD44780_D4 A, 0
+#define HD44780_D4 A, 4
 
 /* Whether to read the busy flag, or fall back to
    worst-time delays. */
