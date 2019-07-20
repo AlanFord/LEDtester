@@ -314,10 +314,10 @@ Wire Wire Line
 Text Notes 8300 2000 0    60   ~ 0
 Voltage Control
 $Comp
-L MCU_Microchip_ATtiny:ATtiny84A-SSU U?
+L MCU_Microchip_ATtiny:ATtiny84A-SSU U401
 U 1 1 5D2A7A82
 P 5150 2950
-F 0 "U?" H 4620 2996 50  0000 R CNN
+F 0 "U401" H 4620 2996 50  0000 R CNN
 F 1 "ATtiny84A-SSU" H 4620 2905 50  0000 R CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5150 2950 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H 5150 2950 50  0001 C CNN
